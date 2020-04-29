@@ -1,3 +1,3 @@
 # js
-It is simple js exercies in js core and js dom sides.
+They are simple js exercies in js core and js dom sides.
 
