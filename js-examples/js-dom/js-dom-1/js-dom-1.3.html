@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>28Mart</title>
+	<style type="text/css">
+		
+		.frame {
+			width: 960px;
+			border: 2px solid black;
+			margin: 0 auto;
+			display: flex;
+			flex-wrap: wrap;
+			background-color: #cecece;
+		}
+
+		.box {
+			width: 50px;
+			height: 50px;
+			
+		}
+
+	</style>
+</head>
+<body>
+	<div class="frame"></div>
+
+	<script type="text/javascript">
+
+		let boxes = '';
+		
+		for (var i = 0; i < 50; i++) {
+			boxes += '<div class = "box"></div>'
+		}
+
+		document.getElementsByClassName('frame')[0].innerHTML = boxes;
+
+		let box = document.getElementsByClassName('box')
+		for (var i = box.length - 1; i >= 0; i--) {
+			box[i].addEventListener('mouseover' , deyis)
+		}
+
+		function deyis() {
+			let x = Math.floor(Math.random() * 256), 
+			y = Math.floor(Math.random() * 256), 
+			z = Math.floor(Math.random() * 256);
+
+			this.style.backgroundColor = 'rgb('+x+', '+y+', '+z+')';
+		}
+
+	</script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>28aprel_2</title>
+
+	<style type="text/css">
+		.btn {
+			padding: 10px;
+			padding-left: 15px;
+			padding-right: 15px;
+			border: 1px black solid;
+			margin-top: 250px;
+		}
+
+	</style>
+
+</head>
+<body>
+
+	<p class="par">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+	<button class = "btn">Bura!!</button>
+
+	<script type="text/javascript">
+
+		let paraq = document.getElementByClassName('par')[0] 
+		
+		document.getElementsByClassName('btn')[0].addEventListener('click', deyis)
+
+		function deyis(){
+			paraq.style.color = "red";
+		}
+
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>28Aprel</title>
+
+	<style type="text/css">
+		
+		.boxes {
+			width: 100px;
+			height: 100px;
+			border:2px black solid;
+		}
+
+	</style>
+</head>
+<body>
+
+	<div class="boxes get" style="background-color: blue;"></div>
+	<div class="boxes get" style="background-color: red;"></div>
+	<div class="boxes get" style="background-color: green;"></div>
+
+	<div class="boxes set"></div>
+	<div class="boxes set"></div>
+	<div class="boxes set"></div>
+
+	<script type="text/javascript">
+		let gets = document.getElementsByClassName('get')
+		for (var i = gets.length - 1; i >= 0; i--) {
+			gets[i].addEventListener('click', get_color)
+		}
+
+		function get_color() {
+			col = this.style.backgroundColor;
+		}
+
+		let sets = document.getElementsByClassName('set')
+		for (var i = sets.length - 1; i >= 0; i--) {
+			sets[i].addEventListener('click', set_color)
+		}
+
+		function set_color() {
+			this.style.backgroundColor = col;
+		}
+	</script>
+
+</body>
+</html>

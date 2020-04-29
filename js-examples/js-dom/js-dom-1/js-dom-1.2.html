@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		
+		.box {
+			height: 50px;
+			width: 50px;
+			background-color: red;
+		}
+
+		
+
+	</style>
+</head>
+<body>
+	<div class="box"></div>
+
+	<script type="text/javascript">
+		document.getElementsByClassName('box')[0].addEventListener('mouseover', deyis);
+
+		let reqem = 10;
+		function deyis(){
+			reqem += 10
+			this.style.border = reqem +'px solid black'
+		}
+	</script>
+</body>
+</html>
