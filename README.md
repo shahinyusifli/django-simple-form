@@ -1,2 +1,3 @@
-# django-simple-form
-Pizza sifarisinie esaslanmisdir
+# js
+It is simple js exercies in js core and js dom sides.
+
